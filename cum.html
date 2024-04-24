@@ -1,0 +1,118 @@
+
+<html>
+<head>
+    <title>C U M   C O U N T</title>
+</head>
+<body>
+    <article>
+        <section>
+            <h1>OHHH I CAME!!!:</h1>
+            <h1 id="count">0</h1>
+        </section>
+        <section>
+        <button id="increment">CUM!!!</button>
+        <button id="decrement">WIPE UR CUM!!!</button>
+        </section>    
+    </article>
+
+    
+    
+</body>
+<script>
+    let count = 0;
+
+    const increment = () => {
+        count++;
+    };
+
+    const decrement = () => {
+        count--;
+    };
+
+    const renderCountValue = () => {
+      document.getElementById('count').innerText = count;
+    };
+
+    const incrementButton = document.getElementById('increment');
+    incrementButton.addEventListener('click', (event) => {
+        increment();
+        renderCountValue();
+    });
+
+    const decrementButton = document.getElementById('decrement');
+    decrementButton.addEventListener('click', (event) => {
+        decrement();
+        renderCountValue();
+    });
+
+    var random_images_array = ["1428178080167.png", 
+"1428178080167.png", 
+"1446055508030.png", 
+"1446322234634.png",
+"1446382234634.png",
+"1446463082730.png",
+"1448242666775.png",
+"1448491901093.png",
+"1453766877670.png",
+"1457740113058.png",
+"1457765150963.png",
+"1458114655716.png",
+"1458438424722.png",
+"1458695854180.png",
+"1472894659994.png",
+"1484879057343.png",
+"1494909700688.png",
+"1435095810235.png"
+];
+
+path = 'pictures/qts/'; 
+var num = Math.floor( Math.random() * random_images_array.length );
+var img = random_images_array[ num ];
+var imgStr = '<img src="' + path + img + '" alt="cute grill">';
+//var imgStr = '<img src="pictures/qts/1428178080167.png" alt="cute grill">';
+
+
+document.write(imgStr); document.close();
+</script>
+<style>
+ 
+ body{background-image: url(pictures/bg.png)}
+
+h1 {
+    text-align: center;
+    color: rgba(8, 8, 8, 0.555);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+button {
+  background-color: #e22ec4;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+
+span {
+    text-align: center;
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+section {
+    text-align: center;
+    color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+{
+  position: bottom;
+  left: 30px;
+  border: 3px solid #c40000;
+}
+
+</style>
+</html>
